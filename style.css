@@ -1,0 +1,135 @@
+/*------UNIVERSAL------*/
+
+:root {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  color-scheme: light dark;
+  color: #333;
+  background-color: #f5f5f5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#startBtn,
+#sendNotificationBtn,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+textarea {
+    font-family: 'Poetsen One', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+/*------WELCOME SCREEN------*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  margin-bottom: 275px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px; 
+}
+
+#startBtn {
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  border: 2px solid black; 
+  background: linear-gradient(to right, #92d3f5, #fcea2b); 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#startBtn:hover {
+  background: linear-gradient(to right, #fcea2b, #92d3f5); 
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+h4 {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+p{
+  margin-top: 5px;
+}
+
+#phoneInput {
+  margin-top: 40px;
+  margin-bottom: 10px;
+
+}
+
+#phoneNumber {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: center; 
+}
+
+/*------CONTAINER------*/
+
+.container {
+  height: 300px;
+  width:300px;
+}
+
+/*------HOME SCREEN------*/
+/*------HOME SCREEN------*/
+.notification-inputs {
+  margin-top: 40px; /* Adjusted margin-top */
+  margin-bottom: 10px;
+}
+
+.notification-inputs input, .notification-inputs textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: inherit; /* Use the same font as the parent element */
+  box-sizing: border-box;
+  text-align: center;
+  resize: none;
+  margin-bottom: 10px; /* Prevent resizing */
+}
+
+#sendNotificationBtn {
+  padding: 10px 20px; 
+  border-radius: 10px; 
+  border: 2px solid black; 
+  background: linear-gradient(to right, #92d3f5, #fcea2b); 
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#sendNotificationBtn:hover {
+  background: linear-gradient(to right, #fcea2b, #92d3f5); 
+}
