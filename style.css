@@ -116,7 +116,8 @@ p{
   box-sizing: border-box;
   text-align: center;
   resize: none;
-  margin-bottom: 10px; /* Prevent resizing */
+  margin-bottom: 10px;
+  background-color: #fff; /* Prevent resizing */
 }
 
 #sendNotificationBtn {

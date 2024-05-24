@@ -7,11 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (Notification.permission !== 'granted') {
-            Notification.requestPermission().then(permission => {
-                if (permission !== 'granted') {
-                    alert('You need to allow notifications to use this feature.');
-                }
-            });
+            // Ask the user to enable notifications
+            const enableNotifications = confirm('Do you want to enable notifications?');
+            if (enableNotifications) {
+                Notification.requestPermission().then(permission => {
+                    if (permission !== 'granted') {
+                        alert('You need to allow notifications to use this feature.');
+                    }
+                });
+            }
         }
     }
 
@@ -25,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (Notification.permission === 'granted') {
             new Notification(title, {
                 body: message,
-                icon: 'parrit.svg' // Replace 'parrit.svg' with the path to your Parrit logo
+                icon: 'public/parrit.svg' // Replace 'parrit.svg' with the path to your Parrit logo
             });
         } else {
             alert('You need to allow notifications to use this feature.');
